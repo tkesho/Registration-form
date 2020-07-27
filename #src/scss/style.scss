@@ -1,0 +1,91 @@
+// <import fonts> 
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+// </import fonts>
+
+
+// <mixins>
+
+// </mixins>
+
+
+// <import files>
+	@import 'nullstyle.scss';
+// </import files>
+
+body {
+
+	padding: 10px;
+	background: url('https://i.pinimg.com/originals/b0/e8/d8/b0e8d8e751fc6322451fed5ba50707f9.jpg') 0 0/cover no-repeat fixed ;
+	font-family: Poppins;
+	color: white;
+	p {
+		font-size: 20px;
+		margin: 30px 0px 10px 5px;
+	}
+
+	input[type="text"], input[type="number"], select {
+		width: 99%;
+		min-height: 40px;
+		border-radius: 4px;
+		font-size: 15px;
+		padding: 9px;
+		font-family: Poppins;
+	}
+
+	[placeholder] {
+		padding: 0px 0px 0px 8px;
+	}
+
+	input[type="text"]:focus, input[type="number"]:focus, select:focus {
+		box-shadow: 0px 0px 10px #334eff;
+	}
+
+	input[type='radio'], input[type='checkbox'] {
+		margin: 20px 15px 0px 5px;
+		transform: scale(1.8);
+	}
+
+	textarea {
+		resize: none;
+		width: 615px;
+		height: 80px;
+		border-radius: 4px;
+		font-size: 15px;
+		padding: 9px;
+		font-family: Poppins;
+		width: 99%;
+	}
+
+	button {
+		display: block;
+		width: 90%;
+		height: 40px;
+		background-color: orange;
+		margin: 0 auto;
+		margin: 20px auto 0px;
+		border-radius: 3px;
+		color: white;
+		font-size: 16px;
+	}
+}
+.header {
+	&__title {
+		font-size: 3em;
+		text-align: center;
+		margin: 50px 0px 0px 0px;
+	}
+	&__subtitle {
+		font-style: italic;
+		text-align: center;
+		margin: 10px 0px 0px 0px;
+		letter-spacing: 0.5px;
+	}
+}
+.container {
+	max-width: 650px;
+	width: 100%;
+	margin: 30px auto;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	padding: 20px;
+}
